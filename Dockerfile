@@ -1,7 +1,8 @@
 FROM alpine
-COPY main ./
-COPY public/* ./
-COPY zaplogger.develop.yml ./
-COPY application.develop.yml ./
+COPY main /opt
+COPY public/* /opt
+COPY zaplogger.develop.yml /opt
+COPY application.develop.yml /opt
+WORKDIR /opt
 EXPOSE 8000
 CMD [ "./main" ]
