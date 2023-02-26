@@ -1,4 +1,4 @@
-FROM scratch
+FROM alpine
 COPY main ./
 COPY public/* ./
 COPY zaplogger.develop.yml ./
