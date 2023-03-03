@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/static-debian11
+FROM busybox
 COPY main /opt
 COPY public/* /opt
 COPY zaplogger.develop.yml /opt
